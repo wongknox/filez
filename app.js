@@ -49,7 +49,7 @@ app.get("/folders/:id", async (req, res, next) => {
           json_build_object(
             'id', files.id,
             'name', files.name,
-            'size', files.size, -- Corrected syntax: 'size', files.size
+            'size', files.size, 
             'folder_id', files.folder_id
           )
         ) FILTER (WHERE files.id IS NOT NULL) AS files
